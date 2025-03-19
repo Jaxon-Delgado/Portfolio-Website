@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaxon Delgado | About</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <img src="assets/images/profile.jpg" alt="Jaxon Delgado" class="profile-img">
+            <div class="header-text">
+                <h1>Jaxon Delgado</h1>
+                <p>Cybersecurity Enthusiast | Aspiring Cyber Security Analyst</p>
+
+                <!-- Social Buttons -->
+                 <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jaxondelgado/" target="_blank" class="social-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Jaxon-Delgado" target="_blank" class="social-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="mailto:jaxondelgado11@gmail.com" target="_blank" class="social-btn">
+                        <i class="fas fa-envelope"></i> Mail
+                    </a>
+                 </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Content -->
+    <main class="container">
+
+        <!-- About Me Section-->
+        <section>
+            <h2>Deep Dive About Me!</h2>
+            <p>Lorem Ipsum</p>
+        </section>
+
+        <!-- Certification Section-->
+        <section>
+            <h2>CompTIA Certifications</h2>
+            <ul class="certifications-list">
+                <li>
+                    <img src="assets/icons/pentest-logo.png" alt="PenTest+" class="cert-icon">
+                    <span>PenTest+ (ID: XCG82E8SQBQ4105D)</span>
+                    <a href="http://verify.CompTIA.org" class="validate-btn"
+                        target="_blank">Validate</a>
+                </li>
+                <li>
+                    <img src="assets/icons/cysa-logo.png" alt="PenTest+" class="cert-icon">
+                    <span>CySA+ (ID: 506WYJM631R4QMGK)</span>
+                    <a href="http://verify.CompTIA.org" class="validate-btn"
+                        target="_blank">Validate</a>
+                </li>
+                <li>
+                    <img src="assets/icons/security-logo.png" alt="PenTest+" class="cert-icon">
+                    <span>Security+ (ID: 8C0MYE2YNFVQQF96)</span>
+                    <a href="http://verify.CompTIA.org" class="validate-btn"
+                        target="_blank">Validate</a>
+                </li>
+                <li>
+                    <img src="assets/icons/network-logo.png" alt="PenTest+" class="cert-icon">
+                    <span>Network+ (ID: Q3KLJWCYHBREQ99Q)</span>
+                    <a href="http://verify.CompTIA.org" class="validate-btn"
+                        target="_blank">Validate</a>
+                </li>
+                <li>
+                    <img src="assets/icons/a-logo.png" alt="PenTest+" class="cert-icon">
+                    <span>A+ (ID: CLEQ2YK5JM1Q16SS)</span>
+                    <a href="http://verify.CompTIA.org" class="validate-btn"
+                        target="_blank">Validate</a>
+                </li>
+                <li>
+                    <img src="assets/icons/project-logo.png" alt="PenTest+" class="cert-icon">
+                    <span>Project+ (ID: YRQ4D5B53FB4QF98)</span>
+                    <a href="http://verify.CompTIA.org" class="validate-btn"
+                        target="_blank">Validate</a>
+                </li>
+            </ul>
+
+            <!-- Certification Image Carousel -->
+            <div class="gallery-container">
+                <h3>Certification Images</h3>
+                <div class="gallery">
+                    <!-- Previous Button -->
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+
+                    <!-- Gallery Container -->
+                    <div class="gallery-main">
+                        <!-- Items -->
+                        <img src="assets/images/certifications/comptia-pentest.jpg" alt="PenTest+" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-cysa.jpg" alt="CySa+" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-security.jpg" alt="Securiy+" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-network.jpg" alt="Network+" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-a.jpg" alt="A+" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-project.jpg" alt="Project+" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-cios.jpg" alt="IT Operations Specialist - CIOS" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-cnsp.jpg" alt="Network Security Professional - CNSP" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-cnvp.jpg" alt="Network Vulnerability Assessment Professional - CNVP" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-csap.jpg" alt="Security Analytic Professional - CSAP" class="cert-image" />
+                        <img src="assets/images/certifications/comptia-csis.jpg" alt="Secure Infrastructure Specialist - CSIS" class="cert-image" />
+                    </div>
+
+                    <!-- Next Button -->
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Thumbnails on bottom of carousel -->
+                <div class="gallery-thumbnails">
+                    <img src="assets/images/certifications/comptia-pentest.jpg" alt="CySA+" onclick="currentSlide(0)" />
+                    <img src="assets/images/certifications/comptia-cysa.jpg" alt="CySA+" onclick="currentSlide(1)" />
+                    <img src="assets/images/certifications/comptia-security.jpg" alt="Security+" onclick="currentSlide(2)" />
+                    <img src="assets/images/certifications/comptia-network.jpg" alt="Network+" onclick="currentSlide(3)" />
+                    <img src="assets/images/certifications/comptia-a.jpg" alt="A+" onclick="currentSlide(4)" />
+                    <img src="assets/images/certifications/comptia-project.jpg" alt="Project+" onclick="currentSlide(5)"/>
+                    <img src="assets/images/certifications/comptia-cios.jpg" alt="IT Operations Specialist - CIOS" onclick="currentSlide(6)"/>
+                    <img src="assets/images/certifications/comptia-cnsp.jpg" alt="Network Security Professional - CNSP" onclick="currentSlide(7)"/>
+                    <img src="assets/images/certifications/comptia-cnvp.jpg" alt="Network Vulnerability Assessment Professional - CNVP" onclick="currentSlide(8)"/>
+                    <img src="assets/images/certifications/comptia-csap.jpg" alt="Security Analytic Professional - CSAP" onclick="currentSlide(9)"/>
+                    <img src="assets/images/certifications/comptia-csis.jpg" alt="Secure Infrastructure Specialist - CSIS" onclick="currentSlide(10)"/>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jaxon Delgado | <a href="contact.html">Contact Me</a></p>
+    </footer>
+
+    <script src="assets/js/gallery.js"></script>
+</body>
+
+</html>
