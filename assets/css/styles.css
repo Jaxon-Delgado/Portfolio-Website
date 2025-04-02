@@ -7,6 +7,13 @@ body {
     color: #1d1d1f;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 15px;
+    }
+}
+
 /* Sticky Navigation Bar */
 nav {
     position: fixed;
@@ -38,7 +45,7 @@ nav a:hover {
 }
 
 /* Container */
-.container {
+.home-container {
     width: 85%;
     max-width: 1000px;
     margin: 80px auto 0;
@@ -95,7 +102,7 @@ header {
     gap: 10px;
 }
 
-.social-btn {
+.button {
     display: flex;
     align-items: center;
     background: #0071e3; /* Apple-style blue */
@@ -118,26 +125,14 @@ header {
     background: #005bb5; /* Darker shade on hover */
 }
 
-/* Profile Section
-#profile {
-    text-align: left;
-    padding: 50px 20px;
-    background: #e6eff7;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-} */
-
 /* Section Styles */
-section {
+.home-section {
     padding: 60px 20px;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 800px;
     transition: background-color 0.3s ease-in-out;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Flowing Sections with Gradient Blue Shades */
@@ -165,13 +160,16 @@ section h2 {
 
 /* List Styling */
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 ul li {
-    font-size: 16px;
-    padding: 8px 0;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -184,6 +182,13 @@ footer {
 }
 
 /* Certifications List */
+.about-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
 .certifications-list {
     list-style-type: none;
     padding: 0;
@@ -230,8 +235,8 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 .gallery-main {
@@ -289,32 +294,23 @@ footer {
     right: 0;
 }
 
-.contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
+/* Contact Page */
+/* Main Container */
+.contact {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-    background: #0071e3; /* Apple-style blue */
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: background 0.3s ease-in-out;
+.contact-me {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
 }
 
 .contact-links ul {
