@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaxon Delgado | Portfolio Home</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
     <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
-    <script> $(function(){$("#header").load("components/header.html");$("#footer").load("components/footer.html"); }); </script>
-
+    <script>
+        $(function() {
+            $("#header").load("components/header.html");
+            $("#footer").load("components/footer.html");
+        });
+    </script>
 </head>
 <body>
     <!-- Header Section -->
@@ -17,17 +20,16 @@
 
     <!-- Main Content -->
     <main class="container">
-        
         <!-- Profile Section -->
         <section id="profile">
             <h2>Hello, World!</h2>
-            <p>I'm Jaxon, a recent Cybersecurity and Information Assurance graduate with a passion for threat intelligence, risk assessment, and security frameworks.</p>
+            <p>I'm Jaxon, a Cybersecurity and Information Assurance graduate passionate about threat intelligence, risk assessment, and security frameworks.</p>
         </section>
 
         <!-- Desired Job Roles -->
         <section id="desired-jobs">
             <h2>Career Focus</h2>
-            <p>I'm looking for entry-level positions in:</p>
+            <p>I'm seeking entry-level positions in:</p>
             <ul>
                 <li>Cyber Threat Intelligence Analyst</li>
                 <li>Security Operations Center (SOC) Analyst</li>
@@ -40,11 +42,6 @@
             <h2>Education</h2>
             <p><strong>Western Governors University</strong></p>
             <p>Bachelor of Science in Cybersecurity and Information Assurance</p>
-            <!-- <span>Diploma Verification Code: 2586-5GBX-JUO3</span>
-            <a href="https://www.wgu.edu/alumni/commencement/e-diploma-verification/validate.html" class="validate-btn"
-                        target="_blank">Validate</a>
-            <p>Diploma Verification code:</p>
-            <a href="https://www.wgu.edu/alumni/commencement/e-diploma-verification/validate.html" onclick="copyURI(event)">2586-5GBX-JUO3</a> -->
         </section>
 
         <!-- Skills Section -->
@@ -59,17 +56,15 @@
             </ul>
         </section>
 
-        <!-- Description Sections -->
+        <!-- Mission Section -->
         <section id="mission">
             <h2>My Mission</h2>
             <p>My goal is to contribute to a cybersecurity team where I can apply my skills in real-world security challenges, continuously grow my expertise, and help organizations build resilient security defenses.</p>
         </section>
-        
     </main>
 
     <!-- Footer Section -->
     <div id="footer"></div>
-
     <script src="assets/js/copylink.js"></script>
 </body>
 </html>

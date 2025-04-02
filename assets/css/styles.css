@@ -108,17 +108,17 @@ header {
     transition: background 0.3s ease-in-out;
 }
 
-.social-btn i {
+.button i {
     margin-right: 8px;
     font-size: 16px;
 }
 
 /* Hover Effects */
-.social-btn:hover {
+.button:hover {
     background: #005bb5; /* Darker shade on hover */
 }
 
-/* Profile Section */
+/* Profile Section
 #profile {
     text-align: left;
     padding: 50px 20px;
@@ -131,7 +131,7 @@ header {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-}
+} */
 
 /* Section Styles */
 section {
@@ -287,4 +287,51 @@ footer {
 
 .next {
     right: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    background: #0071e3; /* Apple-style blue */
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-links li {
+    margin: 10px 0;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 18px;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
 }
