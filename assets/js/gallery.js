@@ -7,7 +7,7 @@ function showSlide() {
     // Hide all slides
     slides.forEach((slide, index) => {
         slide.style.display = 'none';
-        thumbnails[index].style.opacity = 0.7; // Set opacity of all thumbnails to 0.7
+        thumbnails[index].style.opacity = 0.2; // Set opacity of all thumbnails to 0.7
     });
 
     // Show the current slide (main image)
@@ -19,10 +19,11 @@ function showSlide() {
 function moveSlide(direction) {
     slideIndex += direction;
 
+    // Loop back logic
     if (slideIndex < 0) {
-        slideIndex = totalSlides - 1; // Loop back to the last slide
+        slideIndex = totalSlides - 1; 
     } else if (slideIndex >= totalSlides) {
-        slideIndex = 0; // Loop back to the first slide
+        slideIndex = 0; 
     }
 
     showSlide();
@@ -37,5 +38,5 @@ function currentSlide(index) {
 // Initial call to show the first slide
 showSlide();
 
-// Optional: Set interval for automatic slide change (if you want)
+// Set interval for automatic slide change
 // setInterval(() => moveSlide(1), 5000); // Automatically move to the next slide every 5 seconds
