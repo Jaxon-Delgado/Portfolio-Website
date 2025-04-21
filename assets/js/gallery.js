@@ -19,11 +19,10 @@ function showSlide() {
 function moveSlide(direction) {
     slideIndex += direction;
 
-    // Loop back logic
     if (slideIndex < 0) {
-        slideIndex = totalSlides - 1; 
+        slideIndex = totalSlides - 1; // Loop back to the last slide
     } else if (slideIndex >= totalSlides) {
-        slideIndex = 0; 
+        slideIndex = 0; // Loop back to the first slide
     }
 
     showSlide();
@@ -38,5 +37,5 @@ function currentSlide(index) {
 // Initial call to show the first slide
 showSlide();
 
-// Set interval for automatic slide change
+// Optional: Set interval for automatic slide change (if you want)
 // setInterval(() => moveSlide(1), 5000); // Automatically move to the next slide every 5 seconds

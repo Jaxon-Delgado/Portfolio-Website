@@ -80,6 +80,7 @@ nav a:hover {
 .gallery-container {
     margin-top: 40px;
     text-align: center;
+    align-items: center;
 }
 /* ----------- PROJECT ----------- */
 .project-container {
@@ -87,11 +88,14 @@ nav a:hover {
     max-width: 1000px;
     margin: 80px auto 0;
     padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 /* ----------- CONTACT ----------- */
 .contact-container {
-    width: 90%;
-    max-width: 600px;
+    width: 85%;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background: white;
@@ -158,7 +162,7 @@ header {
     font-size: 16px;
 }
 
-.social-btn:hover {
+.button:hover {
     background: #005bb5;
 }
 
@@ -277,7 +281,7 @@ ul li {
     width: 80px;
     height: auto;
     border-radius: 8px;
-    opacity: 0.5;
+    opacity: 0.7;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
 }
@@ -291,13 +295,13 @@ ul li {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #0071e3;
+    background-color: #007bff;
     color: white;
     font-size: 24px;
     padding: 10px;
     border: none;
     cursor: pointer;
-    border-radius: 5%;
+    border-radius: 10%;
     z-index: 1;
 }
 
@@ -310,7 +314,7 @@ ul li {
 }
 
 .prev:hover, .next:hover {
-    background: #005bb5;
+    background: #0056b3;
 }
 
 /* Contact Page */
