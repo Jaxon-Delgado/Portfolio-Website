@@ -26,12 +26,6 @@ nav {
     z-index: 100;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
 nav a {
     text-decoration: none;
     color: #1d1d1f;
@@ -44,12 +38,69 @@ nav a:hover {
     color: #0071e3; /* Apple-style blue */
 }
 
-/* Container */
+/* Containers */
+/* ----------- HEADER/FOOTER/NAV----------- */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    width: 85%;
+    padding-top: 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+    background: #e6eff7;
+}
+
+/* ----------- HOME ----------- */
 .home-container {
     width: 85%;
     max-width: 1000px;
     margin: 80px auto 0;
     padding: 20px;
+}
+/* ----------- ABOUT ----------- */
+.about-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.gallery-container {
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+}
+/* ----------- PROJECT ----------- */
+.project-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 80px auto 0;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+/* ----------- CONTACT ----------- */
+.contact-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /* Header Section */
@@ -58,15 +109,6 @@ header {
     padding: 60px 20px 40px;
     display: flex;
     justify-content: center;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: 900px;
-    width: 85%;
-    padding-top: 20px;
 }
 
 .profile-img {
@@ -101,8 +143,8 @@ header {
     flex-wrap: wrap;
     gap: 10px;
 }
-
-.button {
+/* ----------- Social Button/Normal Button ----------- */
+.social-btn {
     display: flex;
     align-items: center;
     background: #0071e3; /* Apple-style blue */
@@ -115,23 +157,21 @@ header {
     transition: background 0.3s ease-in-out;
 }
 
-.button i {
+.social-btn i {
     margin-right: 8px;
     font-size: 16px;
 }
 
-/* Hover Effects */
 .button:hover {
-    background: #005bb5; /* Darker shade on hover */
+    background: #005bb5;
 }
 
-/* Section Styles */
+/* Section Styles (Home Page)  */
 .home-section {
     padding: 60px 20px;
     margin: 0 auto;
     max-width: 800px;
     transition: background-color 0.3s ease-in-out;
-    /* border-radius: 10px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -172,23 +212,7 @@ ul li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #666;
-    background: #e6eff7;
-}
-
 /* Certifications List */
-.about-container {
-    width: 95%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
 .certifications-list {
     list-style-type: none;
     padding: 0;
@@ -225,17 +249,12 @@ footer {
 }
 
 /* Gallery Container */
-.gallery-container {
-    margin-top: 40px;
-    text-align: center;
-}
-
 .gallery {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: 600px;
+    max-width: 800px;
     margin: 20px auto;
 }
 
@@ -276,13 +295,13 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #007bff;
     color: white;
     font-size: 24px;
     padding: 10px;
     border: none;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 10%;
     z-index: 1;
 }
 
@@ -294,18 +313,11 @@ footer {
     right: 0;
 }
 
-/* Contact Page */
-/* Main Container */
-.contact {
-    width: 90%;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+.prev:hover, .next:hover {
+    background: #0056b3;
 }
 
+/* Contact Page */
 .contact-me {
     margin: 20px auto;
     padding: 20px;

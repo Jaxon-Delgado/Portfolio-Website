@@ -7,7 +7,7 @@ function showSlide() {
     // Hide all slides
     slides.forEach((slide, index) => {
         slide.style.display = 'none';
-        thumbnails[index].style.opacity = 0.7; // Set opacity of all thumbnails to 0.7
+        thumbnails[index].style.opacity = 0.2; // Set opacity of all thumbnails to 0.7
     });
 
     // Show the current slide (main image)
